@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="bitnomad favicon.ico" type="image/x.icon">
     <title>Alpha Playbook</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -58,26 +59,31 @@
         // --- DATA ---
         // TODO: Replace the '#' with actual URLs for your airdrops
         const INITIAL_DATA = [
-            { id: 1, name: "ETHOS", link: "#", status: "ongoing", interaction: "Daily checkin, connect with people so they can review you", help: "On microsoft edge" },
-            { id: 2, name: "Citrea", link: "https://bapps.citrea.xyz/quest", status: "waiting", interaction: "Gain access to the main chat, complete the testnet", help: "Active on DC" },
-            { id: 3, name: "Edgen", link: "https://www.edgen.tech/aura/block_piffer", status: "ongoing", interaction: "General interaction", help: "" },
-            { id: 4, name: "Noise", link: "https://app.noise.xyz/discover", status: "ongoing", interaction: "Just long and short the mindshare", help: "" },
-            { id: 5, name: "Trepa", link: "#", status: "ongoing", interaction: "Predict on site", help: "" },
-            { id: 6, name: "Glider", link: "#", status: "ongoing", interaction: "Deposit money, the more the amount the more the points", help: "" },
-            { id: 7, name: "Dabba", link: "#", status: "ongoing", interaction: "Galxe and DC grind (earn XP, not just chatting)", help: "" },
-            { id: 8, name: "BLOCKSTREET", link: "#", status: "ongoing", interaction: "Daily checkin", help: "" },
-            { id: 9, name: "FERMAH", link: "#", status: "waiting", interaction: "Waiting for update, active on DC", help: "" },
-            { id: 10, name: "MAXSEE", link: "#", status: "ongoing", interaction: "SocialFi, refer and wait for allo", help: "" },
-            { id: 11, name: "SovaBtc", link: "#", status: "ongoing", interaction: "Testnet, suggesting interactions because it has a point system", help: "Earn up to 7% on BTC" },
-            { id: 12, name: "Mento", link: "#", status: "dc", interaction: "Discord interaction only for now", help: "" },
-            { id: 13, name: "Linera", link: "#", status: "quests", interaction: "Complete Quests", help: "Link 1, Link 2" },
-            { id: 14, name: "Inference Galxe", link: "#", status: "ongoing", interaction: "New task on the 21st, chat in discord once a day for 14 days", help: "" },
-            { id: 15, name: "FORTE", link: "#", status: "ongoing", interaction: "Galxe tasks only", help: "Join Forte Protocol" },
-            { id: 16, name: "TBOOK", link: "#", status: "ongoing", interaction: "Minting SBTs, grinding DC is a must", help: "" },
-            { id: 17, name: "Vvana", link: "#", status: "ongoing", interaction: "Sending your data to earn points", help: "2 months duration" },
-            { id: 18, name: "Flying Tulip", link: "#", status: "ongoing", interaction: "Do the tasks, Quiz", help: "" },
-            { id: 19, name: "Dango", link: "#", status: "ended", interaction: "Mainnet soon", help: "" },
+            { id: 1, name: "ETHOS", link: "#", status: "ongoing", interaction: "Daily checkin, connect with people so they can review you", help: "If you don't have invite, trynna get it" },
+            { id: 2, name: "Edgen", link: "https://www.edgen.tech/aura/block_piffer", status: "ongoing", interaction: "General interaction", help: "Check-ins, and X tasks" },
+            { id: 3, name: "Noise", link: "https://app.noise.xyz/discover", status: "ongoing", interaction: "Just long and short the mindshare", help: "" },
+            { id: 4, name: "Trepa", link: "https://www.beta.trepa.app/pools", status: "ongoing", interaction: "Predict on site", help: "" },
+            { id: 5, name: "Glider", link: "https://glider.fi/dashboard", status: "ongoing", interaction: "Deposit money, the more the amount the more the points", help: "" },
+            { id: 6, name: "Dabba", link: "https://app.galxe.com/quest/dabbanetwork/?sort=Trending", status: "ongoing", interaction: "Galxe and DC grind (earn XP, not just chatting)", help: "" },
+            { id: 7, name: "BLOCKSTREET", link: "https://blockstreet.money/dashboard?invite_code=C9pffA", status: "ongoing", interaction: "Daily checkin", help: "" },
+            { id: 8, name: "FERMAH", link: "#", status: "waiting", interaction: "Waiting for update, active on DC", help: "" },
+            { id: 9, name: "MAXSEE", link: "https://maxsee.io?k=E7674472", status: "ongoing", interaction: "SocialFi, refer and wait for allo", help: "" },
+            { id: 10, name: "SovaBtc", link: "https://prime-beta.sova.io?ref=FHU84DVJ", status: "ongoing", interaction: "Testnet, suggesting interactions because it has a point system", help: "Earn up to 7% on BTC" },
+            { id: 11, name: "Mento", link: "#", status: "ongoing", interaction: "Discord interaction only for now", help: "" },
+            { id: 12, name: "Linera", link: "https://portal.linera.net/quests", status: "ongoing", interaction: "Complete Quests", help: "https://t.me/AirdropAnalystChat/3770688?single" },
+            { id: 13, name: "Inference Galxe", link: "https://app.galxe.com/quest/iRdLKduz7mKDAbgAMKGUNB/GCvBUtYiCQ?refer=space_home", status: "ongoing", interaction: "New task on the 21st, chat in discord once a day for 14 days", help: "" },
+            { id: 14, name: "FORTE", link: "#", status: "ongoing", interaction: "Galxe tasks only", help: "Join Forte Protocol" },
+            { id: 15, name: "Inference zealy", link: "https://zealy.io/cw/inference", status: "ongoing", interaction: "Complete Quests", help: "" }, 
+            { id: 16, name: "TBOOK", link: "https://engage.tbook.com/wise?referCode=ARRI8Y", status: "ongoing", interaction: "Minting SBTs, grinding DC is a advisable not a must", help: "Do task to gain more reputation" },
+            { id: 17, name: "Vvana", link: "https://vdatadao.xyz/contribution", status: "ongoing", interaction: "Get invite code. Sending your data to earn points", help: "hard for me too, figure it out chad." },
+            { id: 18, name: "Flying Tulip", link: "https://flyingtulip.com/quiz/", status: "ongoing", interaction: "Do the tasks, Quiz", help: "Check the sheet to get the answers" },
+            { id: 19, name: "Dango", link: "https://app.galxe.com/quest/dango?sort=Trending", status: "ended", interaction: "Mainnet soon", help: "claim oat" },
             { id: 20, name: "Curious", link: "#", status: "ongoing", interaction: "Quiz, waitlist. OG role ending soon.", help: "Check whatsapp group" },
+            { id: 21, name: "Tessera", link: "https://tessera.fun/", status: "ongoing", interaction: "sign up on the waitlist using my code  PIFFER404", help: "" },
+            { id: 22, name: "Colb", link: "https://app.galxe.com/quest/Colb/GCYpot83Du?referral_code=GRFr2JaiLCmsQ3_uZtWHYWTmgtLhpgPcTPL2yCNg57NPIIv", status: "ongoing", interaction: "mint nft, and keep tabs", help: "" },
+            { id: 23, name: "SIXR", link: "https://firstinnings.sixrcricket.com/?r=0f476c167755", status: "ongoing", interaction: "Social tasks", help: "" },
+            { id: 24, name: "First dollar", link: "https://firstdollar.money/?r=sjRZLO", status: "ongoing", interaction: "sign up", help: "" }, 
+            { id: 25, name: "Tanssi", link: "https://lfd.tanssi.network?referral=DV8XE9S8", status: "ongoing", interaction: "After doing the galxe lfd s3 task(which has ended), keep doing this campaign", help: "" },
         ];
 
         // --- COMPONENTS ---
@@ -253,4 +259,5 @@
         root.render(<AirdropPlaybook />);
     </script>
 </body>
+
 </html>
